@@ -68,3 +68,22 @@ body {
   background-color: var(--Ghost-white);
   color: var(--grey-color);
 }
+.form-btn {
+  background-color: #fee2b3;
+  padding: 15px 100px;
+  border: none;
+}
+.section-banner {
+  height: 100vh;
+
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.form-background{
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 7px;
+  width: 95%;
+}
