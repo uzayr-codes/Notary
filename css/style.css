@@ -1,5 +1,6 @@
 :root {
   --Skin-color: #fee2b3;
+  --Darkskin-color: #fed48d;
   --black-color: #000000;
   --white-color: #ffffff;
   --grey-color: #364d59;
@@ -21,10 +22,13 @@ body {
   background-color: var(--Skin-color);
   padding: 20px 0px;
 }
+
 .logo {
   color: var(--black-color);
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 650;
+  font-size: 24px;
+  padding-left: 80px;
 }
 
 .NavBar .nav-link {
@@ -36,12 +40,16 @@ body {
   color: var(--grey-color);
 }
 
-/* Add spacing between nav links */
 .navbar-nav .nav-item {
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
-/* Hover-based dropdown only for large screens */
+/* Responsive navbar SVG icon */
+.navbar-toggler svg {
+  fill: var(--black-color);
+}
+
+/* Hover-based dropdown for large screens only */
 @media (min-width: 992px) {
   .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -64,26 +72,117 @@ body {
   }
 }
 
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    background-color: var(
+      --Darkskin-color
+    ) !important; /* Change this to your preferred color */
+  }
+
+  .dropdown-menu .dropdown-item {
+    color: var(--grey-color) !important; /* Optional: change text color */
+  }
+}
+
 .dropdown-menu .dropdown-item:hover {
   background-color: var(--Ghost-white);
   color: var(--grey-color);
 }
-.form-btn {
-  background-color: #fee2b3;
-  padding: 15px 100px;
-  border: none;
-}
-.section-banner {
-  height: 100vh;
 
+/* Button Styles */
+.form-btn {
+  background-color: var(--Skin-color);
+  padding: 20px 112px;
+  border: none;
+  color: var(--black-color);
+  font-weight: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: var(--Darkskin-color);
+  color: var(--black-color);
+}
+
+/* Banner Section */
+.section-banner {
+  min-height: 100vh;
   background-image: url(../images/banner.jpg);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+  padding: 50px 0;
 }
-.form-background{
-  background-color: #ffffff;
+
+/* Form Box */
+.form-background {
+  background-color: var(--white-color);
   padding: 40px;
   border-radius: 7px;
   width: 95%;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .form-btn {
+    padding: 15px 50px;
+    width: 100%;
+  }
+
+  .form-background {
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  .section-banner {
+    background-position: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Equal Square Card Boxes */
+.square-box {
+  aspect-ratio: 3 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  border-radius: none !important;
+}
+
+.square-box:hover {
+  transform: translateY(-5px);
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.custom-icon1 {
+  font-size: 40px;
+  color: #2c3e50;
+  margin-left: 10px;
+  margin-top: 40px;
+  padding: 10px;
+}
+.icon-circle-bg {
+  background-color: var(--Skin-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
