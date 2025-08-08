@@ -162,12 +162,12 @@ body {
   justify-content: center;
   transition: all 0.3s ease-in-out;
   background-color: #fff;
-  border-radius: none !important;
+  border-radius: 0 !important;
 }
 
 .square-box:hover {
   transform: translateY(-5px);
-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 .custom-icon1 {
@@ -176,13 +176,33 @@ box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
   margin-left: 10px;
   margin-top: 40px;
   padding: 10px;
+  z-index: 9999;
+  position: relative;
 }
-.icon-circle-bg {
-  background-color: var(--Skin-color);
-  width: 50px;
+.icon-circle-bg::after {
+  background-color: var(--Darkskin-color);
   height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 50px;
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  border-radius: 100px;
+  z-index: 1;
+}
+.custom-icon2 {
+  font-size: 40px;
+  color: #2c3e50;
+  margin-left: 10px;
+  margin-top: 40px;
+  padding: 10px;
+}
+.section-bg-color{
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.third-section{
+  margin-top: 100px;
+  
 }
