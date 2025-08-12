@@ -74,9 +74,7 @@ body {
 
 @media (max-width: 991.98px) {
   .dropdown-menu {
-    background-color: var(
-      --Darkskin-color
-    ) !important; /* Change this to your preferred color */
+    background-color: var(--Darkskin-color) !important;
   }
 
   .dropdown-menu .dropdown-item {
@@ -164,6 +162,9 @@ body {
   background-color: #fff;
   border-radius: 0 !important;
 }
+.practice-areas{
+  color: var(--grey-color);
+}
 
 .square-box:hover {
   transform: translateY(-5px);
@@ -171,7 +172,7 @@ body {
 }
 
 .custom-icon1 {
-  font-size: 40px;
+  font-size: 45px;
   color: #2c3e50;
   margin-left: 10px;
   margin-top: 40px;
@@ -180,13 +181,13 @@ body {
   position: relative;
 }
 .icon-circle-bg::after {
-  background-color: var(--Darkskin-color);
+  background-color: var(--Skin-color);
   height: 50px;
   width: 50px;
   content: "";
   position: absolute;
   top: 60px;
-  left: 20px;
+  left: 8%;
   border-radius: 100px;
   z-index: 1;
 }
@@ -197,12 +198,55 @@ body {
   margin-top: 40px;
   padding: 10px;
 }
-.section-bg-color{
+.section-bg-color {
   background-color: #ffffff;
   padding: 15px;
   margin-bottom: 20px;
 }
-.third-section{
+.third-section {
   margin-top: 100px;
-  
+}
+.Form-btn {
+  background-color: var(--Skin-color);
+  border: 0;
+  height: 50px;
+  margin-top: 30px;
+}
+.Form-btn:hover {
+  background-color: var(--Darkskin-color);
+}
+
+.contextInner {
+  margin-left: 80px;
+}
+/* 4th div */
+
+.shadow{
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.happy-customers .card {
+  border-radius: 12px; 
+}
+
+.happy-customers img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; 
+}
+
+.happy-customers .card-body {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.happy-customers .fw-bold {
+  font-size: 1rem; 
+}
+
+.happy-customers small {
+  font-size: 0.85rem;
+}
+section.happy-customers.py-5.bg-light h2 {
+    font-size: 36px;
+    color: var(--grey-color);
 }
