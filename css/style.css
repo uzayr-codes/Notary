@@ -250,3 +250,7 @@ section.happy-customers.py-5.bg-light h2 {
     font-size: 36px;
     color: var(--grey-color);
 }
+/* 5th Section */
+.OuterDiv{
+  background-color: var(--Ghost-white);
+}
