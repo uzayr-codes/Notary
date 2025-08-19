@@ -250,10 +250,17 @@ section.happy-customers.py-5.bg-light h2 {
   font-size: 36px;
   color: var(--grey-color);
 }
-/* 5th Section */
+/* 5th Section (Footer Banner) */
 .OuterDiv {
   background-color: var(--Ghost-white);
 }
-.footer-banner{
+
+.footer-banner {
   height: 700px;
+  background-image: linear-gradient(#000000ba, #000000e6),
+    url("../images/banner.jpg"); /* adjust path if needed */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white; /* text stays visible on dark overlay */
 }
