@@ -120,6 +120,14 @@ body {
   width: 95%;
 }
 
+.aboutInnner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Responsive Fixes */
 @media (max-width: 768px) {
   .container {
@@ -258,9 +266,9 @@ section.happy-customers.py-5.bg-light h2 {
 .footer-banner {
   height: 700px;
   background-image: linear-gradient(#000000ba, #000000e6),
-    url("../images/banner.jpg"); /* adjust path if needed */
+    url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: white; /* text stays visible on dark overlay */
+  color: white;
 }
