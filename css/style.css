@@ -264,11 +264,81 @@ section.happy-customers.py-5.bg-light h2 {
 }
 
 .footer-banner {
-  height: 700px;
+  height: 100vh;
   background-image: linear-gradient(#000000ba, #000000e6),
     url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
+}
+
+/* about */
+
+.team-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #2c3e50;
+}
+
+.team-card {
+  background: #fff;
+  padding: 30px 20px;
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-role {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.team-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.team-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+.team-card img {
+  border-radius: 50px;
+  margin-top: -80px;
+}
+.team-card {
+    background: #fff;
+    padding: 30px 20px;
+    margin-bottom: 50px;
+}
+.team-section h2 {
+  margin-bottom: 100px;
+}
+
+.team-section {
+  margin-top: 50;
+}
+
+@media(max-width:992px){
+  
+}
+
+@media (max-width: 767px) {
+  .contextInner {
+    margin-left: 0px !important;
+  }
 }
