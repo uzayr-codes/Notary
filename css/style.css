@@ -78,7 +78,7 @@ body {
   }
 
   .dropdown-menu .dropdown-item {
-    color: var(--grey-color) !important; 
+    color: var(--grey-color) !important;
   }
 }
 
@@ -95,6 +95,10 @@ body {
   color: var(--black-color);
   font-weight: none;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form.form-background {
+  margin-top: 30px;
 }
 
 .form-btn:hover {
@@ -260,7 +264,7 @@ section.happy-customers.py-5.bg-light h2 {
   margin-bottom: 80px !important;
 }
 element.style {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* 5th Section (Footer Banner) */
@@ -277,7 +281,7 @@ element.style {
   background-position: center;
   color: white;
 }
-.heheImages{
+.heheImages {
   margin-bottom: 80px;
 }
 
@@ -347,7 +351,7 @@ element.style {
   }
 }
 
-/* Contact Section */ 
+/* Contact Section */
 
 body {
   font-family: "Poppins", sans-serif;
@@ -396,4 +400,3 @@ body {
   font-size: 15px;
   color: #333;
 }
-
