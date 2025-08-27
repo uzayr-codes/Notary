@@ -259,6 +259,10 @@ section.happy-customers.py-5.bg-light h2 {
   color: var(--grey-color);
   margin-bottom: 80px !important;
 }
+element.style {
+    margin-bottom: 50px;
+}
+
 /* 5th Section (Footer Banner) */
 .OuterDiv {
   background-color: var(--Ghost-white);
@@ -272,6 +276,9 @@ section.happy-customers.py-5.bg-light h2 {
   background-size: cover;
   background-position: center;
   color: white;
+}
+.heheImages{
+  margin-bottom: 80px;
 }
 
 /* about */
