@@ -78,7 +78,7 @@ body {
   }
 
   .dropdown-menu .dropdown-item {
-    color: var(--grey-color) !important; /* Optional: change text color */
+    color: var(--grey-color) !important; 
   }
 }
 
@@ -257,6 +257,7 @@ body {
 section.happy-customers.py-5.bg-light h2 {
   font-size: 36px;
   color: var(--grey-color);
+  margin-bottom: 80px !important;
 }
 /* 5th Section (Footer Banner) */
 .OuterDiv {
