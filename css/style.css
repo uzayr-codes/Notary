@@ -321,9 +321,9 @@ section.happy-customers.py-5.bg-light h2 {
   margin-top: -80px;
 }
 .team-card {
-    background: #fff;
-    padding: 30px 20px;
-    margin-bottom: 50px;
+  background: #fff;
+  padding: 30px 20px;
+  margin-bottom: 50px;
 }
 .team-section h2 {
   margin-bottom: 100px;
@@ -333,12 +333,59 @@ section.happy-customers.py-5.bg-light h2 {
   margin-top: 50;
 }
 
-@media(max-width:992px){
-  
-}
-
 @media (max-width: 767px) {
   .contextInner {
     margin-left: 0px !important;
   }
 }
+
+/* Contact Section */ 
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.contact-section {
+  background: #f8f9fa;
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.contact-form .form-control {
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+}
+
+.btn-submit {
+  background: var(--Skin-color);
+  color: var(--black-color);
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: var(--Darkskin-color);
+}
+.contact-info {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.contact-info h4 {
+  font-weight: 600;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #333;
+}
+
