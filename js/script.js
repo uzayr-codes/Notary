@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentPage = window.location.pathname.split("/").pop();
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-  navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     // reset first
     link.classList.remove("active");
 
@@ -27,18 +27,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", e => {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", (e) => {
       e.preventDefault();
       document.querySelector(anchor.getAttribute("href")).scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
       });
     });
   });
 
   const appointmentForm = document.querySelector(".form-background");
   if (appointmentForm) {
-    appointmentForm.addEventListener("submit", e => {
+    appointmentForm.addEventListener("submit", (e) => {
       e.preventDefault();
 
       let name = document.querySelector("#name").value.trim();
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== TEAM CARD HOVER EFFECT =====
   const teamCards = document.querySelectorAll(".team-card");
-  teamCards.forEach(card => {
+  teamCards.forEach((card) => {
     card.addEventListener("mouseenter", () => {
       card.classList.add("shadow-lg");
     });
